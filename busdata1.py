@@ -17,7 +17,7 @@ def generate_uuid():
 
 
 client = KafkaClient(hosts="localhost:9092")
-topic = client.topics["testBusData"]
+topic = client.topics["geodata_final"]
 producer = topic.get_sync_producer()
 
 data = {}
@@ -35,6 +35,7 @@ def generate_checkpoint(coordinates: List[List[str]]):
         message = json.dumps(data)
         print(message)
         producer.produce(message.encode("ascii"))
+        sleep(1)
 
         if i == len(coordinates) - 1:
             i = 0
