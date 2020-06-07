@@ -3,4 +3,4 @@
 # kafka-playground
 Following along with the tutorial presented here: https://www.youtube.com/playlist?list=PL2UmzTIzxgL7Bq-mW--vtsM2YFF9GqhVB
 
-It uses latitude/longitude coordinates pulled from [](geojson.io), and presents them in Leaflet as buses moving along bus routes. Kafka is used to produce and consume the bus coordinates.
+It uses latitude/longitude coordinates pulled from [geojson.io](geojson.io), and presents them in Leaflet as buses moving along bus routes. Kafka is used to produce and consume the bus coordinates.
